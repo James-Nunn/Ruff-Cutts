@@ -1,0 +1,298 @@
+body, html{
+  width: 100%;
+  margin: 0;
+}
+
+.timetable {
+  border: 5px solid black;
+}
+
+.timetable td, tr {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#backgroundImage {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1
+}
+
+#navBar {
+  overflow: hidden;
+  background-color: #ffb5b5;
+  width: 100%;
+  z-index: 2
+}
+
+#navBar a {
+  float: left;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navBar a:hover {
+  background-color: #ffb5b5;
+  color: black;
+}
+
+#navBar a.active {
+  background-color: #ff7171;
+  color: white;
+}
+
+#navBar h1.bisName {
+  float: left;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-left: 100px;
+  padding-right: 400px;
+  padding-bottom: 0px;
+  font-size: 16px;
+}
+
+#timetableNavBar h1.bisName {
+  float: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 0.4%;
+}
+
+#timetableNavBar a:hover {
+  background-color: #ffb5b5;
+  color: black;
+}
+
+#timetableNavBar a {
+  float: left;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#timetableNavBar {
+  z-index: 2;
+  overflow: hidden;
+  background-color: #ffb5b5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.header {
+  text-align: center;
+  background: #ffdada;
+  color: black;
+  font-size: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content{
+  width: 100%;
+  height: 50%;
+}
+
+#phone {
+  float: right;
+  color: #ff7171;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 50;
+}
+
+#contactNumber {
+  float: right;
+  padding-left:0 ;
+  padding-top:50px ;
+  padding-bottom:0 ;
+  padding-right: 10%;
+  text-align: center;
+}
+
+.services {
+  text-align: center;
+  background: #ffffff;
+  color: #ff7171;
+  font-size: 30px;
+  padding: 10px;
+}
+
+div.gallery {
+  width: 25%;
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  color: black;
+  border-radius: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#alignGallery {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.shop {
+  text-align: center;
+  background: #ffb5b5;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about {
+  text-align: left;
+  background: #ffffff;
+  color: #ff7171;
+  font-size: 30px;
+  padding: 10%;
+  justify-content: space-between;
+}
+
+#logo {
+}
+
+.footer {
+  text-align: left;
+  background: #ffb5b5;
+  color: #ffffff;
+  font-size: 30px;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+
+#pagePadding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.loginBackground{
+  border-radius: 10px;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  height: 75%;
+  width: 30%;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#loginCTA{
+  text-align: center;
+  color: black;
+}
+
+.loginForm{
+  background-color: white;
+  height: 75%;
+  width: 100%;
+}
+
+.forgotForm{
+  height: 32%;
+  background-color: #ff7171;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.loginInfo{
+  padding: 5%;
+}
+
+.loginButton{
+  padding: 5%;
+  height: 10%;
+  width: 90%;
+}
+
+.loginButton button{
+  width: 100%;
+  height: 100%;
+  background-color: #ff7171;
+}
+
+#bookingImageText{
+  z-index: 0;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: white;
+  font-family: fantasy;
+  font-size: 600%;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}

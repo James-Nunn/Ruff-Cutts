@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ruff Cutts</title>
+  </head>
+  <body>
+
+    <div id="timetableNavBar">
+      <a href="landingPage.html">Home</a>
+      <h1 class="bisName">Ruff Cutts</h1>
+    </div>
+
+    <img src="Images/BookingDog.jpg" alt="Dog in a Park" width="100%" style="z-index: 0;">
+    <h1 id="bookingImageText"><b>Book a Cutt for your Pup</b></h1>
+
+    <form id="pagePadding" method="post">
+      <div class="elem-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+      <div class="elem-group">
+        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+      </div>
+      <div class="elem-group">
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">Available Dates</label>
+        <input type="date" id="checkin-date" name="checkin" required>
+      </div>
+      <div class="elem-group inlined">
+        <label for="checkin-date">Available Times</label>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+      </div>
+      <div class="elem-group">
+        <label for="room-selection">Select a Cutt for Your Pup</label>
+        <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a  Cut</option>
+            <option value="connecting">Bath</option>
+            <option value="adjoining">Full Cut</option>
+            <option value="adjacent">Bath and Cut</option>
+            <option value="adjacent">Light Summer Cut</option>
+        </select>
+      </div>
+      <button style="background-color: #ff7171;"type = "submit">
+        <a style="text-decoration: none;"href="SuccessBooking.html">Book the Cutt!</a>
+      </button>
+    </form>
+
+  </body>
+</html>
