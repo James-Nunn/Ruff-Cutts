@@ -1,140 +1,145 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Ruff Cuts</title>
-  </head>
-  <body>
 
-    <div class="header">
-      <img id="logo" src="Images/Logo.png" width="30%" alt="Ruff Cuts Logo">
-    </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ruff Cuts</title>
+</head>
 
-    <div id="navBar">
-      <h1 class="bisName">Ruff Cutts</h1>
-      <a class="active" href="index.html">Home</a>
-      <a href="javascript:void(0)">Services</a>
-      <a href="javascript:void(0)">Shop</a>
-      <a href="javascript:void(0)">About</a>
-      <a style="float:right" href="timetable.html">Book</a>
-    </div>
+<body>
 
-    <div class="content">
-      <img id="backgroundImage" src="Images/Landing.jpg" width="100%" alt="Dog On Sand Dune">
-      <div class="loginBackground">
-        <h1 id="loginCTA">Login!</h1>
-        <div class="loginForm">
-          <form class="loginInfo" action="index.html" method="post">
-            <div class="elem-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="visitor_email" placeholder="Email">
-            </div>
-            <div class="elem-group">
-              <label for="name">Password</label>
-              <input type="password" id="name" name="visitor_password" placeholder="Password" pattern=[A-Z\sa-z]{3,15}>
-            </div>
-          </form>
+  <div class="header">
+    <img id="logo" src="Images/Logo.png" width="30%" alt="Ruff Cuts Logo">
+  </div>
 
-          <div class="loginButton">
-            <button type="button" name="button">Log in</button>
+  <div id="navBar">
+    <h1 class="bisName">Ruff Cutts</h1>
+    <a class="active" href="index.html">Home</a>
+    <a href="javascript:void(0)">Services</a>
+    <a href="javascript:void(0)">Shop</a>
+    <a href="javascript:void(0)">About</a>
+    <a style="float:right" href="timetable.html">Book</a>
+  </div>
+
+  <div class="content">
+    <img id="backgroundImage" src="Images/Landing.jpg" width="100%" alt="Dog On Sand Dune">
+    <div class="loginBackground">
+      <h1 id="loginCTA">Login!</h1>
+      <div class="loginForm">
+        <form class="loginInfo" action="index.html" method="post">
+          <div class="elem-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="visitor_email" placeholder="Email">
           </div>
+          <div class="elem-group">
+            <label for="name">Password</label>
+            <input type="password" id="name" name="visitor_password" placeholder="Password" pattern=[A-Z\sa-z]{3,15}>
+          </div>
+        </form>
+
+        <div class="loginButton">
+          <button type="button" name="button">Log in</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      window.onscroll = function() {myFunction()};
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
 
-      var navbar = document.getElementById("navBar");
-      var sticky = navbar.offsetTop;
+    var navbar = document.getElementById("navBar");
+    var sticky = navbar.offsetTop;
 
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navBar.classList.add("sticky")
-        } else {
-          navBar.classList.remove("sticky");
-        }
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navBar.classList.add("sticky")
+      } else {
+        navBar.classList.remove("sticky");
       }
-    </script>
+    }
+  </script>
 
-    <div class="services">
-      <h2>Services</h2>
+  <div class="services">
+    <h2>Services</h2>
+    <table cellspacing="25">
+      <tr>
+        <td>
+          <img src="Images/Dog1.jpg" alt="Golden Retriever" width="90%">
+          <p>We do golden dogs</p>
+        </td>
+        <td>
+          <img src="Images/Dog2.jpeg" alt="Forest" width="90%">
+          <p>We do fluffy dogs</p>
+        </td>
+        <td>
+          <img src="Images/Dog3.jpeg" alt="Northern Lights" width="90%">
+          <p>We do scruffy dogs</p>
+        </td>
+        <td>
+          <img src="Images/Dog4.jpg" alt="Forest" width="90%">
+          <p>We do all puppy dogs</p>
+        </td>
+      </tr>
+    </table>
+  </div>
 
-<div id="alignGallery">
-      <div class="gallery">
-    <img src="Images/Dog1.jpeg" alt="Golden Retriever" width="90%">
-  </a>
-  <div class="desc">We do golden dogs</div>
-</div>
+  <div class="shop">
+    <h2>Shop</h2>
 
-<div class="gallery">
-    <img src="Images/Dog2.jpeg" alt="Forest" width="90%" >
-  </a>
-  <div class="desc">We do fluffy dogs</div>
-</div>
+    <div id="alignGallery">
+      <table cellspacing="25">
+    <tr>
+      <td>
+        <img src="Images/DogToy.jpg" alt="Golden Retriever" width="90%">
+        <p>Dog Toy</p>
+      </td>
+      <td>
+        <img src="Images/DogBowl.jpg" alt="Forest" width="90%">
+        <p>Dog Bowl</p>
+      </td>
+      <td>
+        <img src="Images/DogCollar.jpg" alt="Northern Lights" width="90%">
+        <p>Dog collor</p>
+      </td>
+      <td>
+        <img src="Images/DogBrush.jpg" alt="Forest" width="90%">
+        <p>Dog brush</p>
+      </td>
+    </tr>
+  </table>
+  </div>
 
-<div class="gallery">
-    <img src="Images/Dog3.jpeg" alt="Northern Lights" width="90%">
-  </a>
-  <div class="desc">We do scruffy dogs</div>
-</div>
-
-<div class="gallery">
-    <img src="Images/Dog4.webp" alt="Forest" width="90%">
-  </a>
-  <div class="desc">Treat your pup with a Ruff Cut</div>
-</div>
-</div>
+  <div class="about">
+    <h2 style="text-align: center;">About</h2>
+    <img src="Images/HouseGrooming.jpeg" alt="In house grooming" width="40%" height="50%">
+    <div style="float: right">
+      <h4 style="color: black">Can't make it in?</h4>
+      <p style="color: black">We also do in house Grooming!</p>
     </div>
+  </div>
 
-<div class="shop">
-  <h2>Shop</h2>
-
-  <div id="alignGallery">
-        <div class="gallery">
-      <img src="Images/DogToy.png" alt="Golden Retriever" width="90%">
+  <div class="footer">
+    <h3 style="padding-top: 2.5%; padding-left: 45%;">Site Map</h3>
+    <a href="index.html">
+      <h6>Home</h6>
     </a>
-    <div class="desc">Dog Toy</div>
-  </div>
-
-  <div class="gallery">
-      <img src="Images/DogBowl.jpg" alt="Forest" width="90%">
+    <a href="#Services">
+      <h6>Services</h6>
     </a>
-    <div class="desc">Dog Bowl</div>
-  </div>
-
-  <div class="gallery">
-      <img src="Images/DogCollar.jpg" alt="Northern Lights" width="90%">
+    <a href="#Shop">
+      <h6>Shop</h6>
     </a>
-    <div class="desc">Dog collor</div>
-  </div>
-
-  <div class="gallery">
-      <img src="Images/DogBrush.jpg" alt="Forest" width="90%">
+    <a href="#About">
+      <h6>About</h6>
     </a>
-    <div class="desc">Dog brush</div>
+    <a href="timetable.html">
+      <h6>Book</h6>
+    </a>
   </div>
-  </div>
-</div>
 
-<div class="about">
-  <h2 style="text-align: center;">About</h2>
-  <img src="Images/HouseGrooming.jpeg" alt="In house grooming" width="40%" height="50%">
-  <div style="float: right">
-  <h4 style="color: black">Can't make it in?</h4>
-  <p style="color: black">We also do in house Grooming!</p>
-</div>
-</div>
+</body>
 
-<div class="footer">
-  <h3 style="padding-top: 2.5%; padding-left: 45%;">Site Map</h3>
-  <a href="index.html"><h6>Home</h6></a>
-  <a href="#Services"><h6>Services</h6></a>
-  <a href="#Shop"><h6>Shop</h6></a>
-  <a href="#About"><h6>About</h6></a>
-  <a href="timetable.html"><h6>Book</h6></a>
-</div>
-
-  </body>
 </html>
