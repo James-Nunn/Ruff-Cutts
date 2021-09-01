@@ -128,7 +128,7 @@ body, html{
   text-align: center;
 }
 
-.services {
+#services {
   text-align: center;
   background: #ffffff;
   color: #ff7171;
@@ -164,7 +164,7 @@ div.desc {
   align-items: left;
 }
 
-.shop {
+#shop {
   text-align: center;
   background: #ffb5b5;
   color: #ffffff;
@@ -172,7 +172,7 @@ div.desc {
   padding: 10px;
 }
 
-.about {
+#about {
   text-align: left;
   background: #ffffff;
   color: #ff7171;
