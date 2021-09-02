@@ -15,10 +15,10 @@
 
   <div id="navBar">
     <h1 class="bisName">Ruff Cutts</h1>
-    <a class="active" href="index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="#shop">Shop</a>
-    <a href="#about">About</a>
+    <a id="banana" href="index.html" onclick="serviceFuction()">Home</a>
+    <a id="banana" href="#services" onclick="serviceFuction()">Services</a>
+    <a id="banana" href="#shop" onclick="serviceFuction()">Shop</a>
+    <a id="banana" href="#about" onclick="serviceFuction()">About</a>
     <a style="float:right" href="timetable.html">Book</a>
   </div>
 
@@ -59,6 +59,11 @@
       } else {
         navBar.classList.remove("sticky");
       }
+    }
+
+    function serviceFunction() {
+      var element = document.getElementById("banana");
+      element.classList.add("active");
     }
   </script>
 
